@@ -90,9 +90,9 @@ function ListSpecialities()
 
 
     var list = document.getElementById("specialtiesList");
-
     list.appendChild(li);
   }
+  $('#collapse1').collapse("toggle");
 }  
 function myFunction(item, index) {
   //1 Create carddiv 
