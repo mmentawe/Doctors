@@ -1,11 +1,6 @@
 $(function () {
   "use strict";
   // Control buttons
-  $('.dropbtn').click(function () {
-    $(".dropdown-content").show();
-    return false;
-  });
-  
   var specialities = $.map(Doctors, function(d, i){
     return d.Speciality;
   });
@@ -18,36 +13,85 @@ $(function () {
     return $.grep(array, function(el, index) {
         return index == $.inArray(el, array);
     });
-}
-function ShowSpeciality(link)
-{
-  var speciality = link.getAttribute('speciality');
-  var specialText = document.getElementById("specialText");
-  specialText.innerText = speciality;
-  var specialityDoctors = $.grep(Doctors, function(d) {
-    return d.Speciality == speciality;
-  });  
-  var div = document.getElementById("doctorList");
-  while(div.firstChild){
-    div.removeChild(div.firstChild);
   }
-  specialityDoctors.forEach(myFunction);
-  $(".dropdown-content").hide();
+  function ShowSpeciality(link)
+  {
+    var speciality = link.getAttribute('speciality');
+    var specialText = document.getElementById("specialText");
+    specialText.innerText = speciality;
+    var specialityDoctors = $.grep(Doctors, function(d) {
+      return d.Speciality == speciality;
+    });
+
+    $("#sliderindicators").remove();
+    var MainDiv = document.getElementById("MainDiv");
+
+    //<div id="sliderindicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    var carouseldiv =  document.createElement("div");
+    carouseldiv.id = "sliderindicators";
+    carouseldiv.className = "carousel slide";
+    carouseldiv.setAttribute("data-ride", "carousel");
+    carouseldiv.setAttribute("data-interval","false");
+    MainDiv.appendChild(carouseldiv);
+
+    /*
+      <ol class="carousel-indicators">                                                              
+          <li data-target="#sliderindicators" data-slide-to="0" class="active"></li>                
+          <li data-target="#sliderindicators" data-slide-to="1"></li>                               
+          <li data-target="#sliderindicators" data-slide-to="2"></li>                               
+      </ol>                                                                                         
+    */
+  var carouselol =  document.createElement("ol");
+  carouselol.className = "carousel-indicators";
+  carouseldiv.appendChild(carouselol);
+  for (var i=0; i<specialityDoctors.length; i++)
+  {
+    var carouselli =  document.createElement("li");
+    if (i == 0){
+      carouselli.className = "active";
+    }
+    carouselli.setAttribute("data-target", "#sliderindicators");
+    carouselli.setAttribute("data-slide-to",i.toString());
+    carouselol.appendChild(carouselli);
+  }     
+
+  //  <div class="carousel-inner" role="listbox" id="doctorList"></div>                                                                                                                     \
+  var carouselinner =  document.createElement("div");
+  carouselinner.id = "doctorList";
+  carouselinner.className = "carousel-inner";
+  carouselinner.setAttribute("role", "listbox");
+  carouseldiv.appendChild(carouselinner);
+
+  for (var i=0; i<specialityDoctors.length; i++)
+  {
+    carouselinner.appendChild(myFunction(specialityDoctors[i], i));
+  }     
+  $('#collapse1').collapse("toggle");
 }
 function ListSpecialities()
 {
   for (var i=0; i<specialities.length; i++)
   {
+
+    var li = document.createElement('li');
+    li.className = "list-group-item text-center";
+
+
     var a = document.createElement('a');
+    a.className = "dropdownText";
     a.setAttribute('href', '#');
-    var list = document.getElementById("specialtiesList");
     a.setAttribute('speciality', specialities[i]);
     a.appendChild(document.createTextNode(specialities[i]));
     a.onclick = (function(){ 
       ShowSpeciality(this);
       return true; 
     });
-    list.appendChild(a);
+    li.appendChild(a);
+
+
+    var list = document.getElementById("specialtiesList");
+
+    list.appendChild(li);
   }
 }  
 function myFunction(item, index) {
@@ -56,17 +100,15 @@ function myFunction(item, index) {
   if (image == null || image.length == 0) {
     image = "team2.jpg";
   }
-  var tableRow = document.createElement("tr");
-  var tableCol = document.createElement("td")
-  tableRow.appendChild(tableCol);
-
-  tableCol.className = "tableCol active";
+  var div = document.createElement("div");
+  if (index == 0) {
+    div.className = "carousel-item active";
+  } else {
+    div.className = "carousel-item";
+  }
   var innerHtml = '<div class="card"> <div class="card-body"><p class="card-title text-center">' + item.Name + 
-                    '</p>'+ 
-                    //'<p class="card-title text-center">'+item.Speciality+'</p>'+
-                    '<img class="card-img-top" src="images/' + 
-                    image + '" alt="' + item.Name + '" style="width:100%"><p class="card-text text-center">' +
-                    item.Bio + '</p>';
+                    '</p><img class="card-img-top" src="images/' + image + '" alt="' + item.Name + 
+                    '" style="width:100%"><p class="card-text text-center">' + item.Bio + '</p>';
   for (var i in item.Clinics) {
     if (item.Clinics[i].Name != null) {
       innerHtml += '<p class="clinic">' + item.Clinics[i].Name + '</p>';
@@ -84,9 +126,8 @@ function myFunction(item, index) {
       innerHtml +=  '</address>';
     }
   };
-  innerHtml +=  '</div><p><button class="contact">Contact</button></p></div>';
-  tableCol.innerHTML =  innerHtml;
-  //2 Get the   
-  document.getElementById("doctorList").appendChild(tableRow);
+  innerHtml +=  '</div><p><button class="contact">Contact</button></p>';
+  div.innerHTML =  innerHtml;
+  return div;
 }
 });
