@@ -4,7 +4,7 @@ var Doctors =
     "Name":"د. ممدوح الشافعي", 
     "Speciality":"عيون", 
     "Image":"Mamdouh.jpg", 
-    "Bio":"استشاري طب و جراحه العيون و عضو الأكاديمية الأمريكية و الجمعية الأوروبيه. رئيس وحده الشبكية و الجسم الزجاجي المركز القومي للعيون. أحد مؤسسي جمعيه عيون مصر و مستشفيات النور للعيون و العضو المنتدب لمستشفى الرواد للعيون",
+    "Bio":"استشاري طب و جراحة العيون و عضو الأكاديمية الأمريكية و الجمعية الأوروبيه. رئيس وحده الشبكية و الجسم الزجاجي المركز القومي للعيون. أحد مؤسسي جمعيه عيون مصر و مستشفيات النور للعيون و العضو المنتدب لمستشفى الرواد للعيون",
     "Clinics": [
       {
         "Name":"عيادة",
@@ -15,7 +15,7 @@ var Doctors =
   { 
     "Name":"د. عادل البنا", 
     "Speciality":"القلب", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"قلب و اوعيه دموية",
     "Clinics": [
       {
@@ -61,8 +61,8 @@ var Doctors =
   },
   {
     "Name":"أ. د. مني الفنجري", 
-    "Speciality":"الامراض الجلدية و التجميل و الليزر", 
-    "Image":"team1.jpg", 
+    "Speciality":"جلديه و تجميل", 
+    "Image":"Female-Doctor.png", 
     "Bio":"رئيس قسم الامراض الجلدية جامعة مصر للعلوم و التكنولوجيا",
     "Clinics": [
     {
@@ -77,7 +77,7 @@ var Doctors =
   {
     "Name":"أ.د.حسين كمال الدين", 
     "Speciality":"أوعية دمويه", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"أستاذ جراحة الاوعية الدمويه جامعة القاهرة",
     "Clinics": [
     {
@@ -93,7 +93,7 @@ var Doctors =
   {
     "Name":"أ. د. هاله فؤاد", 
     "Speciality":"أطفال", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"أستاذ طب جامعة القاهره",
     "Clinics": [
     {
@@ -107,7 +107,7 @@ var Doctors =
   {
     "Name":"أ. د. جعفر قناوي", 
     "Speciality":"نساء وولاده", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"امراض نساء القصر العيني - طب و جراحة النساء و التوليد و العقم - رءيس قسم الولادة في جامعة مصر",
     "Clinics": [
     {
@@ -118,7 +118,7 @@ var Doctors =
   {
     "Name":"أ.د. أشرف هلال", 
     "Speciality":"القلب", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"رئيس قسم جراحة القلب القصر العيني",
     "Clinics": [
     {
@@ -129,7 +129,7 @@ var Doctors =
   {
     "Name":"د. طارق العباس", 
     "Speciality":"تحاليل", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"دكاترة تحاليل",
     "Clinics": [
     {
@@ -140,7 +140,7 @@ var Doctors =
   {
     "Name":"د. صباح محمد شبكه", 
     "Speciality":"تحاليل", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"دكاترة تحاليل",
     "Clinics": [
     {
@@ -151,7 +151,7 @@ var Doctors =
   {
     "Name":"د. مني نصار", 
     "Speciality":"تحاليل", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"أستشاري تحاليل طبيه مستشفي الساحل التعليمي / رءيس قسم التحاليل",
     "Clinics": [
     {
@@ -161,7 +161,7 @@ var Doctors =
   {
     "Name":"أ.د. يسري عقل", 
     "Speciality":"صدر و حساسيه", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"أستاذ أمراض الصدر و الحساسيه",
     "Clinics": [
     {
@@ -176,7 +176,7 @@ var Doctors =
   {
     "Name":"د. أحمد أمين", 
     "Speciality":"أسنان", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"Premuim Dental Center- Chief Dental Operator - Dental Consultant Cairo University",
     "Clinics": [
     {
@@ -187,7 +187,7 @@ var Doctors =
   {
     "Name":"د. ساره أمين", 
     "Speciality":"أسنان", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"Premuim Dental Center- Board Certified Prosthodontist- Dental Consultant Cairo University",
     "Clinics": [
     {
@@ -198,7 +198,7 @@ var Doctors =
   {
     "Name":"د. سيد سنيور", 
     "Speciality":"أسنان", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"رئيس قسم الاسنان في الجامعة البريطانيه- أستاذ ورءيس قسم الاسنان جامعة القاهره",
     "Clinics": [
     {
@@ -213,7 +213,7 @@ var Doctors =
   {
     "Name":"د. طارق سنيور", 
     "Speciality":"أسنان", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"مدرس مساعد علاج الجذور",
     "Clinics": [
     {
@@ -227,7 +227,7 @@ var Doctors =
   {
     "Name":"أ.د. تامر النحاس", 
     "Speciality":"أورام", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"أستاذ طب الأورام  كلية طب القصر العيني - جامعة القاهرة",
     "Clinics": [
     {
@@ -238,7 +238,7 @@ var Doctors =
   {
     "Name":"أ.د. أحمد الشرقاوي", 
     "Speciality":"عظام", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"رئيس قسم العظام مستشفي دار الفؤاد",
     "Clinics": [
     {
@@ -252,7 +252,7 @@ var Doctors =
   {
     "Name":"د. أمال فؤاد", 
     "Speciality":"Homeopath", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"دكتور هوميوباث",
     "Clinics": [
     {
@@ -263,7 +263,7 @@ var Doctors =
   {
     "Name":"د.عمر الجعلي", 
     "Speciality":"نساء وولاده", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"متقاعد / استشاره فقط / استشاري نساء وولاده",
     "Clinics": [
     {
@@ -273,7 +273,7 @@ var Doctors =
   {
     "Name":"د. أحمدعبد المجيد", 
     "Speciality":"روماتيزم", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"متقاعد / استشاره فقط / استشاري امراض روماتيزم",
     "Clinics": [
     {
@@ -283,7 +283,7 @@ var Doctors =
   {
     "Name":"د. هدي صادق", 
     "Speciality":"تحاليل", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"تخصص تحليل امراض دم القصر العيني",
     "Clinics": [
     {
@@ -293,7 +293,7 @@ var Doctors =
   {
     "Name":"أ.د. محمد أبو الغيط ", 
     "Speciality":"علاج سمنه", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"أستاذ علاج السمنه / القصر العيني ",
     "Clinics": [
     {
@@ -310,7 +310,7 @@ var Doctors =
   {
     "Name":"أ.د. إبراهيم بلبع", 
     "Speciality":"عيون", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"",
     "Clinics": [
     {
@@ -321,7 +321,7 @@ var Doctors =
   {
     "Name":"د. نيفين الرشيدي", 
     "Speciality":"Clinical pathology", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"باثولوجيا اكلينيكيه القصر العيني",
     "Clinics": [
     {
@@ -331,7 +331,7 @@ var Doctors =
   {
     "Name":"د.رحاب عبد المجيد", 
     "Speciality":"تغذيه", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"مدرس بكلية الطب جامعة القاهره / أستشاري تغذيه طبيه علاجيه ",
     "Clinics": [
     {
@@ -342,7 +342,7 @@ var Doctors =
   {
     "Name":"أ.د. سلوي شرف الدين ", 
     "Speciality":"قلب أطفال", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"قلب أطفال و العيوب الخلقيه  في الأطفال",
     "Clinics": [
     {
@@ -353,13 +353,13 @@ var Doctors =
   {
     "Name":"أ.د. حلمي القفاص", 
     "Speciality":"أشعه تشخيصيه", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"متقاعد -  أستاذ أشعه تشخيصيه مسالك بوليه  - فقط استشاره  و نصيحه",
   },
   {
     "Name":"أ. د.طارق درويش", 
     "Speciality":"أشعه تشخيصيه", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"أستشاري الاشعه التشخيصيه - متخصص في أشعة الرنين المغناطيسي و الاشعه المقطعيه - فقط استشاره و نصيحه via whatsup",
     "Clinics": [
     {
@@ -369,7 +369,7 @@ var Doctors =
   {
     "Name":"أ. د. ماجده عبد الرؤوف", 
     "Speciality":"باطنه", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"أستشاري باطنه - تقاعد - أستشاره فقط",
     "Clinics": [
     {
@@ -379,7 +379,7 @@ var Doctors =
   {
     "Name":"د. رانيا حلمي القفاص", 
     "Speciality":"قلب أطفال", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"أستاذ مساعد طب و قلب الأطفال القصر العيني",
     "Clinics": [
     {
@@ -390,7 +390,7 @@ var Doctors =
   {
     "Name":"د. رشا حلمي القفاص", 
     "Speciality":"تحاليل", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"مدرس - هيئة التدريس القصر العيني",
     "Clinics": [
     {
@@ -401,7 +401,7 @@ var Doctors =
   {
     "Name":"د. وفاء المتناوي", 
     "Speciality":"تحاليل", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"Medical Lab",
     "Clinics": [
     {
@@ -413,7 +413,7 @@ var Doctors =
   {
     "Name":"د. رنا عزام مهران", 
     "Speciality":"أطفال", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"نيابة أطفال أبو الريش  - أشتساره  و مساعده و توجيه",
     "Clinics": [
     {
@@ -422,9 +422,9 @@ var Doctors =
   },
   {
     "Name":"أ. د. عصام عبد الجليل", 
-    "Speciality":"جراحه", 
-    "Image":"team2.jpg", 
-    "Bio":"جراحه و مناظير و سمنه",
+    "Speciality":"جراحة", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"جراحة و مناظير و سمنه",
     "Clinics": [
     {
     "Address":"12 عبد الرحيم صبري الدقي", 
@@ -433,9 +433,9 @@ var Doctors =
   },
   {
     "Name":"أ. د. فهيم علي البسيوني", 
-    "Speciality":"جراحه", 
-    "Image":"team2.jpg", 
-    "Bio":"أستاذ الجراحه العامه و المناظير و السمنه - كلية الطب القصر العيني",
+    "Speciality":"جراحة", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"أستاذ الجراحة العامه و المناظير و السمنه - كلية الطب القصر العيني",
     "Clinics": [
     {
     "Name":"الشيخ زايد",
@@ -450,7 +450,7 @@ var Doctors =
   {
     "Name":"أ.د. خالد حلمي القفاص", 
     "Speciality":"دوالي", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"علاج و حقن الدوالي",
     "Clinics": [
     {
@@ -461,7 +461,7 @@ var Doctors =
   {
     "Name":"د. رنا أسامه محرم", 
     "Speciality":"طب نفسي أطفال", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"أخصائي طب نفسي أطفال و مراهقين- عضو الكليه الملكيه للطب النفسي-  أستشاره و توجيه و نصيحه عبر ال whatsup تعمل في إنجلترا ",
     "Clinics": [
     {
@@ -471,7 +471,7 @@ var Doctors =
   {
     "Name":"د. زياد أبو العباس", 
     "Speciality":"صيدله", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"صيدلية أبو العباس - سنتر الهدايا",
     "Clinics": [
     {
@@ -481,7 +481,7 @@ var Doctors =
   {
     "Name":"د. أحمد أبو العباس", 
     "Speciality":"صيدله", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"صيدلية أبو العباس - سنتر الهدايا",
     "Clinics": [
     {
@@ -491,7 +491,7 @@ var Doctors =
   {
     "Name":"د. لبني أبراهيم ", 
     "Speciality":"صيدله", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":"Activa Therapeutics / Pharmaceutical Company",
     "Clinics": [
     {
@@ -501,14 +501,97 @@ var Doctors =
   {
     "Name":"د. لميس إبراهيم", 
     "Speciality":"Family medecine", 
-    "Image":"team1.jpg", 
+    "Image":"Female-Doctor.png", 
     "Bio":""
+  },
+  {
+    "Name":"د. ايناس فايف", 
+    "Speciality":"صيدله", 
+    "Image":"Female-Doctor.png", 
+    "Bio":"",
+    "Clinics": [
+    {
+    "Address":"Opens 24 hours", 
+    "Phone":["19507"]
+    }]
+  },
+  {
+    "Name":"د. احمد محمد ابو الغيط ", 
+    "Speciality":"جلديه و تجميل", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"",
+    "Clinics": [
+    {
+    "Name":"عيادة Medipoint",
+    "Address":"الشيخ زايد",
+    "Phone":["01099960014", "01001678147"]
+    }]
+  },
+  {
+    "Name":"د. احمد الجابري", 
+    "Speciality":"جراحة عظام", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"",
+    "Clinics": [
+    {
+    "Name":"عبادة المهندسين",
+    "Address":"٩ شارع سوريا", 
+    "Phone":["01101822220"]
+    },
+    {
+      "Name":"مستشفي الشيخ زايد التخصصي",
+      "Address":""
+      }]
+  },
+  {
+    "Name":"د. جمال حسني عبد المقصود", 
+    "Speciality":"جراحة عظام", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"استشاري جراحة العظام و رئيس وحده مناظير المفاصل معهد ناصر",
+    "Clinics": [
+    {
+    "Name":"العياده",
+    "Address":"٦ ميدان باب  اللوق الدور ٢", 
+    "Phone":["01003300931", "27942271"]
+    }]
+  },
+  {
+    "Name":"د. محمد عصام عبد الجليل جمعه", 
+    "Speciality":"جراحة", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"جراحة مناظير وسمنه",
+    "Clinics": [
+    {
+    "Name":"مستشفي د. عصام عبد الجليل",
+    "Address":"١٢ شارع عبد الرحمن صبري متفرع من شارع التحرير  بحوار سينما التحرير", 
+    "Phone":["3358872", "01003003313"]
+    }]
+  },
+  {
+    "Name":"Terry optics Egypt", 
+    "Speciality":"عيون", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"",
+    "Clinics": [
+    {
+    "Name":"<a href='http://www.terryopticsegypt.com/'>http://www.terryopticsegypt.com</a>"
+    }]
+  },
+  {
+    "Name":"د. اشرف سمير يونس", 
+    "Speciality":"نساء وولاده", 
+    "Image":"Male-Doctor.png", 
+    "Bio":"أستاذ في القصر العيني نساء وولاده. تخصص IVF أطفال انابيب",
+    "Clinics": [
+    {
+    "Phone":["01001424434"]
+    }]
   },
 /*
   {
     "Name":"", 
     "Speciality":"", 
-    "Image":"team2.jpg", 
+    "Image":"Male-Doctor.png", 
     "Bio":"",
     "Clinics": [
     {

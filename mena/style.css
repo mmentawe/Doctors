@@ -50,12 +50,6 @@ address {
   font-size: 1.3em;
 }
 
-ul {
-  overflow: auto;
-  list-style-type: none;
-  direction: rtl;
-}
-
 .text-center {
   text-align: center;
 }
@@ -98,7 +92,9 @@ ul {
   font-size: 1em;
 }
 
-
 [data-slide-to] {
   cursor: pointer;
+}
+.list-group-item{
+  margin: 0 0 0 2em
 }
