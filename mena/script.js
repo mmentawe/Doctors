@@ -79,9 +79,8 @@ function ShowSpeciality(link) {
 
   for (var i=0; i<specialityDoctors.length; i++)
   {
-    carouselinner.appendChild(myFunction(specialityDoctors[i], i));
+    carouselinner.appendChild(CreateCard(specialityDoctors[i], i));
   }     
-  $('#collapse1').collapse("toggle");
 }
 function ListSpecialities() {
   for (var i=0; i<specialities.length; i++)
@@ -103,9 +102,8 @@ function ListSpecialities() {
     var list = document.getElementById("specialtiesList");
     list.appendChild(li);
   }
-  $('#collapse1').collapse("toggle");
 }  
-function myFunction(item, index) {
+function CreateCard(item, index) {
   //1 Create carddiv 
   var image = item.Image;
   if (image == null || image.length == 0) {
