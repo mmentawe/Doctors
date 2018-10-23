@@ -70,22 +70,35 @@ ul {
 
 .carousel-indicators li {
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  margin: .8em;
   text-indent: 0;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  background-color: blue;
-  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
-}
-.carousel-indicators .active {
   width: 2em;
   height: 2em;
-  margin: .8em;
-  background-color: red;
+  cursor: pointer;
+  border-radius: 50%;
+  line-height: 2em;
+  color: #fff;
+  background-color: #999;
+  transition: all 0.25s ease;
 }
+
+.carousel-indicators .active {
+  width: 2.25em;
+  height: 2.25em;
+  background-color: #337ab7;        
+}
+.carousel-indicators :hover {
+  width: 2.25em;
+  height: 2.25em;
+  background-color: #337ab7;        
+}
+
+.carousel-indicators-text {
+  padding: 0 .25em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+
 [data-slide-to] {
   cursor: pointer;
 }

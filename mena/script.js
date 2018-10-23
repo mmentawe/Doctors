@@ -1,6 +1,7 @@
 $(function () {
   "use strict";
   // Control buttons
+
   var specialities = $.map(Doctors, function(d, i){
     return d.Speciality;
   });
@@ -32,7 +33,22 @@ $(function () {
     carouseldiv.className = "carousel slide";
     carouseldiv.setAttribute("data-ride", "carousel");
     carouseldiv.setAttribute("data-interval","false");
+
     MainDiv.appendChild(carouseldiv);
+    
+    var hammerEvent = new Hammer(carouseldiv);
+    
+    // listen to events...
+    hammerEvent.on("swipeleft swiperight", function(ev) {
+      if (ev.type == 'swiperight')
+      {
+        $("#sliderindicators").carousel("prev");
+      }
+      else
+      {
+        $("#sliderindicators").carousel("next");
+      }
+    });
 
     /*
       <ol class="carousel-indicators">                                                              
@@ -47,9 +63,11 @@ $(function () {
   for (var i=0; i<specialityDoctors.length; i++)
   {
     var carouselli =  document.createElement("li");
+    carouselli.className = "text-center carousel-indicators-text";
     if (i == 0){
-      carouselli.className = "active";
+      carouselli.className += " active";
     }
+    carouselli.innerText = (i+1).toString();
     carouselli.setAttribute("data-target", "#sliderindicators");
     carouselli.setAttribute("data-slide-to",i.toString());
     carouselol.appendChild(carouselli);
@@ -76,7 +94,6 @@ function ListSpecialities()
     var li = document.createElement('li');
     li.className = "list-group-item text-center";
 
-
     var a = document.createElement('a');
     a.className = "dropdownText";
     a.setAttribute('href', '#');
@@ -87,7 +104,6 @@ function ListSpecialities()
       return true; 
     });
     li.appendChild(a);
-
 
     var list = document.getElementById("specialtiesList");
     list.appendChild(li);
@@ -119,9 +135,11 @@ function myFunction(item, index) {
     if (item.Clinics[i].Address != null) {
       innerHtml +=  item.Clinics[i].Address + '<br />';
     }
-    if (item.Clinics[i].Phone != null) {
-      innerHtml += '<abbr title="Phone">P:</abbr>' + item.Clinics[i].Phone;
-    }
+//    if (item.Clinics[i].Phone != null) {
+      for (var j in item.Clinics[i].Phone) {
+        innerHtml += '<a href="tel:'+item.Clinics[i].Phone[j]+'">'+item.Clinics[i].Phone[j]+'</a><br />';
+      }
+  //  }
     if (item.Clinics[i].Address != null || item.Clinics[i].Phone != null) {
       innerHtml +=  '</address>';
     }
