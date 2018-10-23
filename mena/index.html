@@ -1,42 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript" src="script.js"></script>
-</head>
-<body dir="rtl">
-    <header>
-        <nav>
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                    <h4 class="panel-title text-center">
-                        <a id="" class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapse1">التخصصات</a>
-                    </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                    <ul id="specialtiesList" class="list-group">
-                    </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <h1 class="text-center" id="specialText"></h1>
-    <div id="MainDiv"></div>
-</body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="data.json"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body dir="rtl">
+        <div class="dropdown text-center">
+            <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">التخصصات<span class="caret"></span></button>
+            <ul id="specialtiesList" class="dropdown-menu"></ul>
+        </div>
+        <h1 class="text-center" id="specialText"></h1>
+        <div id="MainDiv"></div>
+        <br />
+    </body>
 </html>
 
 
