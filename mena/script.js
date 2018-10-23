@@ -135,11 +135,13 @@ function myFunction(item, index) {
     if (item.Clinics[i].Address != null) {
       innerHtml +=  item.Clinics[i].Address + '<br />';
     }
-//    if (item.Clinics[i].Phone != null) {
+    if (item.Clinics[i].Phone != null) {
+      innerHtml += '<div class="rtlA">';
       for (var j in item.Clinics[i].Phone) {
         innerHtml += '<a href="tel:'+item.Clinics[i].Phone[j]+'">'+item.Clinics[i].Phone[j]+'</a><br />';
       }
-  //  }
+      innerHtml += '</div>';
+    }
     if (item.Clinics[i].Address != null || item.Clinics[i].Phone != null) {
       innerHtml +=  '</address>';
     }

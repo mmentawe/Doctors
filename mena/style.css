@@ -98,3 +98,7 @@ address {
 .list-group-item{
   margin: 0 0 0 2em
 }
+
+.rtlA {
+  direction: ltr;
+}
