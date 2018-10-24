@@ -3,6 +3,13 @@
   font-weight: bold;
   font-size: 1em;
 }
+
+h1 {
+  font-family: 'Calibri', Times, serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
 .clinic {
   font-weight: bold;
   font-size: 1.5em;
@@ -17,6 +24,7 @@ address {
   font-style: italic;
   font-size: 1em;
 } 
+
 .card {
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
   max-width: 25em;
@@ -44,10 +52,18 @@ address {
   z-index: auto;
 }
 
-.dropdownText {
-  padding: .5em;
-  text-decoration: none;
+.btn-lg
+{
   font-size: 1.3em;
+}
+
+.dropdown-menu {
+  font-size: 1.3em;
+  padding: 0;
+  margin-top : 2em;
+  margin-right :0;
+  margin-bottom :0;
+  margin-left :-1em;
 }
 
 .text-center {
@@ -94,9 +110,6 @@ address {
 
 [data-slide-to] {
   cursor: pointer;
-}
-.list-group-item{
-  margin: 0 0 0 2em
 }
 
 .rtlA {

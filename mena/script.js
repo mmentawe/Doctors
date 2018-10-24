@@ -1,22 +1,20 @@
+var specialities;
 $(function () {
   "use strict";
-  // Control buttons
 
-  var specialities = $.map(Doctors, function(d, i){
+  //Get list of specialities
+  specialities = $.map(Doctors, function(d, i){
     return d.Speciality;
   });
   specialities = unique(specialities);
-
-  //Get list of specialities
   ListSpecialities();
-
-  function unique(array) {
-    return $.grep(array, function(el, index) {
-        return index == $.inArray(el, array);
-    });
-  }
-  function ShowSpeciality(link)
-  {
+});
+function unique(array) {
+  return $.grep(array, function(el, index) {
+      return index == $.inArray(el, array);
+  });
+}
+function ShowSpeciality(link) {
     var speciality = link.getAttribute('speciality');
     var specialText = document.getElementById("specialText");
     specialText.innerText = speciality;
@@ -36,9 +34,8 @@ $(function () {
 
     MainDiv.appendChild(carouseldiv);
     
-    var hammerEvent = new Hammer(carouseldiv);
-    
     // listen to events...
+    var hammerEvent = new Hammer(carouseldiv);
     hammerEvent.on("swipeleft swiperight", function(ev) {
       if (ev.type == 'swiperight')
       {
@@ -82,20 +79,17 @@ $(function () {
 
   for (var i=0; i<specialityDoctors.length; i++)
   {
-    carouselinner.appendChild(myFunction(specialityDoctors[i], i));
+    carouselinner.appendChild(CreateCard(specialityDoctors[i], i));
   }     
-  $('#collapse1').collapse("toggle");
 }
-function ListSpecialities()
-{
+function ListSpecialities() {
   for (var i=0; i<specialities.length; i++)
   {
-
     var li = document.createElement('li');
     li.className = "list-group-item text-center";
 
     var a = document.createElement('a');
-    a.className = "dropdownText";
+    a.className = "list-group-item-link";
     a.setAttribute('href', '#');
     a.setAttribute('speciality', specialities[i]);
     a.appendChild(document.createTextNode(specialities[i]));
@@ -108,9 +102,8 @@ function ListSpecialities()
     var list = document.getElementById("specialtiesList");
     list.appendChild(li);
   }
-  $('#collapse1').collapse("toggle");
 }  
-function myFunction(item, index) {
+function CreateCard(item, index) {
   //1 Create carddiv 
   var image = item.Image;
   if (image == null || image.length == 0) {
@@ -146,8 +139,7 @@ function myFunction(item, index) {
       innerHtml +=  '</address>';
     }
   };
-  innerHtml +=  '</div><p><button class="contact">Contact</button></p>';
+  innerHtml +=  '</div>';
   div.innerHTML =  innerHtml;
   return div;
 }
-});
